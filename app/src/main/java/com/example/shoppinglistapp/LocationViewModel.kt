@@ -5,7 +5,7 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 
-class LocationViewModel : ViewModel() {
+class locationViewModel : ViewModel() {
     private val _location = mutableStateOf<Location?>(null)
     val location: State<Location?> = _location
 

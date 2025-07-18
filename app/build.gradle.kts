@@ -42,6 +42,7 @@ android {
 dependencies {
     implementation("com.google.maps.android:maps-compose:6.4.1")
     implementation("com.google.android.gms:play-services-maps:19.0.0")
+    implementation ("com.google.android.gms:play-services-location:21.3.0")
     val nav_version = "2.9.1"
     implementation("androidx.navigation:navigation-compose:$nav_version")
     val lifecycle_version = "2.9.1"
