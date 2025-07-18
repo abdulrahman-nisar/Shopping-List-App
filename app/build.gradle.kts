@@ -1,10 +1,14 @@
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 }
 
+
 android {
+
+
     namespace = "com.example.shoppinglistapp"
     compileSdk = 35
 
@@ -16,6 +20,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+
+
     }
 
     buildTypes {
@@ -37,12 +44,16 @@ android {
     buildFeatures {
         compose = true
     }
+
+
+
+
 }
 
 dependencies {
     implementation("com.google.maps.android:maps-compose:6.4.1")
     implementation("com.google.android.gms:play-services-maps:19.0.0")
-    implementation ("com.google.android.gms:play-services-location:21.3.0")
+    implementation("com.google.android.gms:play-services-location:21.3.0")
     val nav_version = "2.9.1"
     implementation("androidx.navigation:navigation-compose:$nav_version")
     val lifecycle_version = "2.9.1"
